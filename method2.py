@@ -6,7 +6,7 @@ import winreg
 # Paths and registry keys
 CYLANCE_REGISTRY_KEY = r"SOFTWARE\Cylance\Desktop"
 CYLANCE_SERVICES = ["cylancesvc", "cylanceui", "cyoptics"]
-CYLANCE_DRIVERS_PATH = r"C:\Windows\System32\drivers\"
+CYLANCE_DRIVERS_PATH = r"C:\Windows\System32\drivers\\"
 CYLANCE_DRIVER_FILES = [
     "CylanceDrv64.sys",
     "CyOpticsDrv.sys",
