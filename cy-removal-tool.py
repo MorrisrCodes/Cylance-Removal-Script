@@ -1,7 +1,7 @@
 import winreg
 
 # Cylance Registry Key Information
-CYLANCE_REGISTRY_KEY = r"SOFTWARE\Cylance"
+CYLANCE_REGISTRY_KEY = r"folder with cylance"
 
 def check_cylance_installed():
     """Check if Cylance is installed by querying the registry."""

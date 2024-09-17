@@ -4,7 +4,7 @@ import subprocess
 import winreg
 
 # Paths and registry keys
-CYLANCE_REGISTRY_KEY = r"SOFTWARE\Cylance\Desktop"
+CYLANCE_REGISTRY_KEY = r"folder with(\Cylance\Desktop)"
 CYLANCE_SERVICES = ["cylancesvc", "cylanceui", "cyoptics"]
 CYLANCE_DRIVERS_PATH = r"C:\Windows\System32\drivers\\"
 CYLANCE_DRIVER_FILES = [
@@ -65,7 +65,7 @@ def main():
     delete_files(CYLANCE_DRIVERS_PATH, CYLANCE_DRIVER_FILES)
     
     # Optionally, delete the Cylance registry folder (if any other paths are involved)
-    delete_registry_key(r"SOFTWARE\Cylance")
+    delete_registry_key(r"folder with cylance")
 
 if __name__ == "__main__":
     main()
